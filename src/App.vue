@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">表单联动</router-link>
+      <!-- <router-link to="/Hook">Hook</router-link> -->
+      <router-link to="/b">动态校验规则</router-link>
+      <router-link to="/table">表格</router-link>
+      <router-link to="/slot">插槽</router-link>
     </div>
     <router-view/>
   </div>
@@ -13,7 +16,6 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 #nav {
@@ -24,6 +26,7 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+    display: block
   }
 }
 </style>
